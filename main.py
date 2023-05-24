@@ -16,7 +16,7 @@ def ruokalista(update, context):
         menu_date = datetime.fromisoformat(menu['Date'].split('T')[0]).date()
         if menu_date == today:
             set_menus = menu['SetMenus']
-            menu_text = f"\nPäivän ruokalista {today_formatted} 🥘\n________________________________"
+            menu_text = f"\nRuokalista Pääraide {today_formatted} 🥘\n_______________________________"
           
             for set_menu in set_menus:
                 components = set_menu['Components']
